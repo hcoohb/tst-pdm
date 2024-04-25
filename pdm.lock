@@ -5,7 +5,7 @@
 groups = ["default", "test"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:5c356c5f448727494e04711d9ffabaf383d73b0f9d6d6ffe7c61a039195493c6"
+content_hash = "sha256:6ca5ab50debbc1acb7fe1a2fc5f25fef5a823fb02fec4240b354a6b245041ab6"
 
 [[package]]
 name = "gunicorn"
@@ -26,7 +26,7 @@ name = "numpy"
 version = "1.26.4"
 requires_python = ">=3.9"
 summary = "Fundamental package for array computing in Python"
-groups = ["test"]
+groups = ["default", "test"]
 marker = "python_version < \"3.11\""
 files = [
     {file = "numpy-1.26.4-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:9ff0f4f29c51e2803569d7a51c2304de5554655a60c5d776e35b4a41413830d0"},
@@ -59,7 +59,7 @@ name = "pandas"
 version = "2.1.3"
 requires_python = ">=3.9"
 summary = "Powerful data structures for data analysis, time series, and statistics"
-groups = ["test"]
+groups = ["default", "test"]
 dependencies = [
     "numpy<2,>=1.22.4; python_version < \"3.11\"",
     "python-dateutil>=2.8.2",
@@ -81,7 +81,7 @@ name = "python-dateutil"
 version = "2.9.0.post0"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 summary = "Extensions to the standard Python datetime module"
-groups = ["test"]
+groups = ["default", "test"]
 dependencies = [
     "six>=1.5",
 ]
@@ -94,7 +94,7 @@ files = [
 name = "pytz"
 version = "2024.1"
 summary = "World timezone definitions, modern and historical"
-groups = ["test"]
+groups = ["default", "test"]
 files = [
     {file = "pytz-2024.1-py2.py3-none-any.whl", hash = "sha256:328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319"},
     {file = "pytz-2024.1.tar.gz", hash = "sha256:2a29735ea9c18baf14b448846bde5a48030ed267578472d8955cd0e7443a9812"},
@@ -105,7 +105,7 @@ name = "six"
 version = "1.16.0"
 requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 summary = "Python 2 and 3 compatibility utilities"
-groups = ["test"]
+groups = ["default", "test"]
 files = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
@@ -116,7 +116,7 @@ name = "tzdata"
 version = "2024.1"
 requires_python = ">=2"
 summary = "Provider of IANA time zone data"
-groups = ["test"]
+groups = ["default", "test"]
 files = [
     {file = "tzdata-2024.1-py2.py3-none-any.whl", hash = "sha256:9068bc196136463f5245e51efda838afa15aaeca9903f49050dfa2679db4d252"},
     {file = "tzdata-2024.1.tar.gz", hash = "sha256:2674120f8d891909751c38abcdfd386ac0a5a1127954fbc332af6b5ceae07efd"},
