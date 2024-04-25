@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+    timezone: "Australia/Brisbane"
+  open-pull-requests-limit: 20
+  groups:
+    Minor-patch:
+      applies-to: version-updates
+      patterns:
+      - "*"
+      update-types:
+      - "minor"
+      - "patch"
